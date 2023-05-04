@@ -60,6 +60,9 @@ VALUES (1, 'Самсоньевский проспект');
 INSERT INTO cr_address(district_code, street_code, building, extension, apartment)
 VALUES (1, 1, '10', '2', '121');
 
+INSERT INTO cr_address(district_code, street_code, building, extension, apartment)
+VALUES (1, 1, '271', null, null);
+
 INSERT INTO cr_person(sur_name, given_name, patronymic, date_of_birth, passport_seria,
                       passport_number, passport_date, c_certificate_number, c_certificate_date)
 VALUES ('Васильев','Павел','Николаевич','1995-03-18','1234','123456','2015-04-11', null, null);
@@ -80,7 +83,7 @@ INSERT INTO cr_address_person(address_id, person_id, start_date, end_date, tempo
 VALUES (1, 1, '2014-10-12', null, false);
 
 INSERT INTO cr_address_person(address_id, person_id, start_date, end_date, temporal)
-VALUES (1, 2, '2014-10-12', null, false);
+VALUES (2, 2, '2014-10-12', null, false);
 
 INSERT INTO cr_address_person(address_id, person_id, start_date, end_date, temporal)
 VALUES (1, 3, '2016-02-05', null, false);
